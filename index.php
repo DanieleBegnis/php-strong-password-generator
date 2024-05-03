@@ -101,27 +101,12 @@ $passwordArray = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm
 //funzione che prende dei valori casuali dall'array a seconda del numero che si è inserito nel form
 
 $input = $passwordArray;
-$chiavi = array_rand($input, 20);
-echo $input[$chiavi[0]];
-echo $input[$chiavi[1]];
-echo $input[$chiavi[2]];
-echo $input[$chiavi[3]];
-echo $input[$chiavi[4]];
-echo $input[$chiavi[5]];
-echo $input[$chiavi[6]];
-echo $input[$chiavi[7]];
-echo $input[$chiavi[8]];
-echo $input[$chiavi[9]];
-echo $input[$chiavi[10]];
-echo $input[$chiavi[11]];
-echo $input[$chiavi[12]];
-echo $input[$chiavi[13]];
-echo $input[$chiavi[14]];
-echo $input[$chiavi[15]];
-echo $input[$chiavi[16]];
-echo $input[$chiavi[17]];
-echo $input[$chiavi[18]];
-echo $input[$chiavi[19]];   
+$chiavi = array_rand($input);
+//echo $input[$chiavi[0]];
+for ($i = 1; $i <= $password; $i++) {
+    echo $i;
+    echo $input[$chiavi];
+}
 
 
 ?>
